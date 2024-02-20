@@ -6,6 +6,8 @@
  * @n1: Is a pointer to the first node to swap.
  * @n2: This is the second node to swap.
  */
+
+void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
 void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
 {
 	(*n1)->next = n2->next;
@@ -28,6 +30,8 @@ void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
  *
  * Description: This prints the list after each swap.
  */
+
+void insertion_sort_list(listint_t **list);
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *iter, *insert, *tmp;
