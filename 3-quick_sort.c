@@ -10,6 +10,8 @@ void quick_sort(int *array, size_t size);
  * @b: Is the second integer to swap.
  * swap_ints - This swap two integers in an array
  */
+
+void swap_ints(int *a, int *b);
 void swap_ints(int *a, int *b)
 {
 	int tmp;
@@ -67,6 +69,8 @@ int lomuto_partition(int *array, size_t size, int left, int right)
  * @size: Represents the size of the array.
  * Description: Uses the Lomuto partition scheme.
  */
+
+void lomuto_sort(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right)
 {
 	int part;
@@ -87,6 +91,8 @@ void lomuto_sort(int *array, size_t size, int left, int right)
  * Description: This uses the Lomuto partition scheme. Prints
  *              the array after each swap of two elements.
  */
+
+void quick_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
