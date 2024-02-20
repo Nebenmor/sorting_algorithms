@@ -11,6 +11,8 @@ void cocktail_sort_list(listint_t **list);
  * @tail: Is pointer to the tail of the doubly-linked list.
  * @shaker: Is a pointer to the current swapping node of the cocktail shaker algo.
  */
+
+void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
 void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker)
 {
 	listint_t *tmp = (*shaker)->next;
@@ -38,6 +40,8 @@ void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker)
  * @shaker: Is a pointer to the current swapping node of the cocktail
  * 			shaker algo.
  */
+
+void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
 void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker)
 {
 	listint_t *tmp = (*shaker)->prev;
@@ -63,6 +67,8 @@ void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker)
  * 						cocktail shaker algorithm.
  * @list: Is a pointer to the head of a listint_t doubly-linked list.
  */
+
+void cocktail_sort_list(listint_t **list);
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *tail, *shaker;
