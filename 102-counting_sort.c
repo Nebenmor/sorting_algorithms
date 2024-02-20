@@ -31,6 +31,8 @@ int get_max(int *array, int size)
  *
  * Description: Prints the counting array after setting it up.
  */
+
+void counting_sort(int *array, size_t size);
 void counting_sort(int *array, size_t size)
 {
 	int *count, *sorted, max, i;
